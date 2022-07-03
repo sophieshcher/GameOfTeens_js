@@ -1,0 +1,201 @@
+/* *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.WriteAndChoose {
+    padding: 40px 140px;
+}
+
+.WriteAndChoose > form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* календар */
+input[type="date"]{
+    background-color: #ff6b00;
+    padding: 15px;
+    /* position: absolute; */
+    /* transform: translate(-50%,-50%); */
+    /* top: 50%;
+    left: 50%; */
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ff6b00;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* календар закінчився */
+.inputDiv {
+    width: 220px;
+    height: 340px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0px 25px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    margin-bottom: 30px;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.inputDiv > h4 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.choooseCategory {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 23px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #FF6B00;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background-color: #D9D9D9;
+    color: rgb(34, 34, 34);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    height: 20px;
+    width: 70%;
+    margin: 10px auto 20px
+}
+
+.inputButton {
+    height: 30px;
+    width: 60px;
+    margin: 0 auto;
+    background-color: #FF6B00;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    transition: 300ms ease-in-out;
+}
+
+.inputButton:hover{
+    background: #ff7e22e1;
+    transform: scale(.94);
+}
+
+
+
+@media (max-width: 1024px) {
+  .WriteAndChoose {
+    padding: 40px 60px;
+}
+
+}
+
+@media (max-width: 720px) {
+.WriteAndChoose {
+    padding: 40px 40px;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container {
+  font-size: 15px;
+  
+}
+}
+
+@media (max-width: 480px) {
+  .quote {
+    width: 80%;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .stylesP2 {
+    font-size: 18px;
+  }
+  .headerProj{
+    font-size: 21px;
+    width: 80%;
+  }
+}

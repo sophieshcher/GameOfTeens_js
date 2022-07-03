@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+.quote {
+  font-family: 'Raleway', sans-serif;
+  border-radius: 5px;
+  background-color: #FF6B00;
+  width: 900px;
+  height: 170px;
+  padding: 27px;
+  margin: 50px auto;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.headerProj {
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px auto 40px;
+  width: 730px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fontFamily: "Raleway, sans-serif";
+}
+
+.stylesP2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .quote {
+    width: 80%;
+    font-size: 23px;
+    padding: 20px;
+  }
+  .headerProj{
+    font-size: 29px;
+    width: 80%;
+  }
+  .stylesP2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 720px) {
+  .quote {
+    width: 80%;
+    font-size: 17px;
+    padding: 16px;
+  }
+  .stylesP2 {
+    font-size: 19px;
+    
+  }
+  .headerProj{
+    font-size: 23px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    width: 80%;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .stylesP2 {
+    font-size: 18px;
+  }
+  .headerProj{
+    font-size: 21px;
+    width: 80%;
+  }
+}
